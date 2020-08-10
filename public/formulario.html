@@ -1,0 +1,53 @@
+<html>
+    <head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body class="container-fluid" onload="Consultar()">
+        <div class="jumbotron">
+            <h1><strong>DIRECTORIO</strong></h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 mx-auto">
+            <ul class="list-group">
+               <input  id="txtID" class="list-group-item w-50" placeholder="ID" style="display:none;">
+               <input  id="txtNombre" class="list-group-item w-50" placeholder="Nombre">
+               <input  id="txtCurp" class="list-group-item w-50" placeholder="CURP">
+               <input  id="txtTelefono" class="list-group-item w-50" placeholder="Teléfono">
+               <input  id="txtEC" class="list-group-item w-50" placeholder="Estado Civil">
+               <input  id="txtEdad" class="list-group-item w-50" placeholder="Edad">       
+               <input   id="txtImg" type="file" placeholder="Examinar...">
+               <button onclick="Subir()" id="btnSubir" class="btn btn-success w-50">Subir</button>
+               <button onclick="Actualizar()" id="btnSubir" class="btn btn-info w-50">Actualizar</button>
+               <button onclick="Eliminar()" id="btnSubir" class="btn btn-danger w-50">Eliminar</button>
+            </ul>
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto ">
+                <input onkeyup="buscar()" id="txtBuscar" style="display: block" class="mx-auto w-50" placeholder="BUSCAR"><br>
+                <!--<button onclick="reset()" id="btnReset" style="display: block" class="btn btn-warning mx-auto w-50">RESET</button>-->
+                <div id="tarjeta" class="bg-dark text-white mx-auto w-80 p-3" style="overflow: y;">
+                    <div class="bg-secondary text-white mx-auto row" >
+                        <!--<img src="https://i.pinimg.com/originals/05/29/60/0529605c95db0636eb5778ad34a855a9.jpg"id="imgPrin" class="col-3" style="margin: 4px; height: 100%; width:100%">
+                        <div class="col-5"><img  src="img/man-user.png">
+                            <p id="Nom">Nombre: Kenneth </p>
+                            <img src="img/tag.png">
+                            <p id="CURP">CURP: LOLK000708</p>
+                            <img src="img/users-relation.png">
+                            <p id="EC">Estado Civil: Soltero</p>
+                        </div><div class="col">
+                            <img src="img/call-answer.png">
+                            <p id="Tel">Teléfono: 4775776423</p>
+                            <img src="img/plus-18-movie.png">
+                            <p id="Edad">Edad: 19</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="js/client.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
